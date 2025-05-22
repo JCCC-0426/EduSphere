@@ -1,0 +1,201 @@
+/* 全局样式 */
+body {
+    /* 设置页面背景色为浅灰色 */
+    background-color: #f8f9fa;
+    /* 设置页面字体 */
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+
+/* 导航栏样式 */
+.navbar {
+    /* 添加阴影效果 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 卡片样式 */
+.card {
+    /* 添加阴影效果 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 添加过渡效果 */
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    /* 鼠标悬停时轻微上浮 */
+    transform: translateY(-5px);
+}
+
+/* 按钮样式 */
+.btn-primary {
+    /* 添加过渡效果 */
+    transition: all 0.2s;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    /* 鼠标悬停时轻微放大 */
+    transform: scale(1.05);
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* 表单样式 */
+.form-control:focus {
+    /* 输入框获得焦点时的边框颜色 */
+    border-color: #0d6efd;
+    /* 输入框获得焦点时的阴影效果 */
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* 页脚样式 */
+footer {
+    /* 添加顶部边框 */
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+
+/* 统计卡片样式 */
+.card.text-white {
+    /* 添加渐变背景 */
+    background: linear-gradient(45deg, #0d6efd, #0a58ca);
+}
+
+/* 课程卡片样式 */
+.course-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 模态框样式 */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+
+/* 课程卡片样式 */
+.card .badge {
+    /* 设置徽章字体大小 */
+    font-size: 0.9em;
+    /* 设置徽章内边距 */
+    padding: 0.5em 1em;
+}
+
+/* 课程时间样式 */
+.schedule-box {
+    border-left: 4px solid #0d6efd;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+.schedule-box:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.schedule-box p {
+    margin-bottom: 0.25rem;
+}
+
+/* 课程时间样式 */
+.time-badge {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: inline-block;
+    white-space: nowrap;
+}
+.schedule-box {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.schedule-box:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+/* Time Highlight Styles */
+.time-highlight {
+    margin-bottom: 1.5rem;
+}
+.time-highlight h6 {
+    color: #0d6efd;
+    font-weight: 600;
+}
+.time-badge {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 0.5rem;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* Date Highlight Styles */
+.date-highlight {
+    margin-bottom: 1.5rem;
+}
+.date-highlight h6 {
+    color: #0dcaf0;
+    font-weight: 600;
+}
+.date-badge {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background-color: #0dcaf0;
+    color: white;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+
+/* Location Highlight Styles */
+.location-highlight {
+    margin-bottom: 1.5rem;
+}
+.location-highlight h6 {
+    color: #198754;
+    font-weight: 600;
+}
+.location-badge {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background-color: #198754;
+    color: white;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    /* 在小屏幕上调整卡片间距 */
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    /* 在小屏幕上调整按钮组样式 */
+    .btn-group {
+        width: 100%;
+    }
+    
+    .btn-group .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
